@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Portfólio</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li> <a href="#first">Inicio</a> </li>
+            <li> <a href="#sobre">Sobre mim</a> </li>
+            <li> <a href="#projetos">Projetos</a> </li>
+            <li> <a href="#habilidades">Habilidades</a> </li>
+            <li> <a href="#contato">Contato</a> </li>
+        </ul>
+    </nav>
+
+    <section id="first">
+        <div id="first-text">
+            <p>"Se a vontade de fazer algo existir, Faça! Mesmo que suas forças estejam no final, só pare de tentar
+                quando você não mais respirar, e se por um acaso voce cair e falhar, Caia tentando com a espada em pé,
+                pronto para lutar de novo! "
+            </p>
+            <span>Nilson Reis Xavier</span>
+        </div>
+
+        <div id="img-rocket">
+            <img src="../static/img/rocket-2.png" alt="Foguete">
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div id="img-perfil">
+            <img src="../static/img/perfil.jpeg" alt="Imagem de perfil">
+        </div>
+
+        <div id="texto-sobre">
+            <p>
+                <li>Me chamo Nilson sou carioca, tenho 38 anos, adoro games, tecnologia e música.</li>
+                <li>Gosto de um pouco de literatura e raciocínio lógico. </li>
+                <li>Trabalho com informática desde 2005, e agora estou indo para a programação, me dedicando para me tornar Fullstack.</li>
+                <li>Meu passatempo favorito são os games.</li>
+                <li>Amo os jogos do Playstation, acompanho desde o primeiro em 1997.</li>
+                <li>Amo as músicas da banda Asian Kung-Fu Generation, desde o primeiro Single suas canções encantam meus
+                    ouvidos.</li>
+            
+            </p>
+        </div>
+    </section>
+
+
+    <section id="projetos">
+
+        <div>
+            <img src="../static/img/img-lerem.png" alt="img-lorem">
+            <a href="https://nilsonrx.github.io/Projeto_Humor/" target="_blank">
+                <h2>Projeto Humor</h2>
+                <p>Um projeto em que consiste em mudar o hunor de um personagem escolhido, utilizando Html, Css,
+                    Javascript.
+                    Ao clicar em um determinado botão seu humor ou situação muda, junto com as informações exibidas.
+                
+                </p>
+                <button>Veja mais </button>
+            </a>
+        </div>
+
+        <div>
+            <img src="../static/img/img-2.png" alt="img-lorem">
+            <a href="https://github.com/nilsonrx/Projeto_Portfolio" target="_blank">
+            <h2>Projeto Portfólio</h2>
+            <p>Esse é meu segundo projeto que consiste em montar meu portfólio. Usando HTML, CSS, JavaScript, Flask,um
+                pouco de Python tambem, e junto a nossa criatividade e muitas ideias junto.
+            </p>
+            <button>Veja mais</button>
+            </a>
+        </div>
+
+
+    </section>
+
+
+    <section id="habilidades">
+
+        <h2>Habilidades Técnicas</h2>
+
+        <p>HTML 5</p>
+        <div>
+            <span id="html5">45%</span>
+        </div>
+
+        <p>CSS 3</p>
+        <div>
+            <span id="css3">40%</span>
+        </div>
+
+        <p>JavaScript</p>
+        <div>
+            <span id="js">30%</span>
+        </div>
+
+        <p>Python</p>
+        <div>
+            <span id="python">40%</span>
+        </div>
+
+        <p>Flask</p>
+        <div>
+            <span id="flask">35%</span>
+        </div>
+
+    </section>
+
+    <section id="contato">
+
+        <div id="redes">
+            <h3>Se conectem com minhas redes </h3>
+            <div>
+
+        
+            <a href="https://www.linkedin.com/in/nilsonrx/" target="_blank">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://github.com/nilsonrx" target="_blank">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a></div>
+        </div>
+
+        <h3>Mande uma mensagem</h3>
+
+        <form action='/send' method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Digite seu nome" id="nome" name="nome">
+
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu email" id="email" name="email">
+
+
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+
+            <button type="submit" id="enviar">Enviar</button>
+
+        </form>
+
+        <div id="carregamento">
+            <p>Enviando mensagem</p>
+            <div id="loader"></div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <script src='../static/js/script.js'></script>
+
+</body>
+
+</html>
